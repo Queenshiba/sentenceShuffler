@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+}
+.container input {
+    width: 80%;
+    height: 40%;
+}
+
+.container button {
+    width: 30%;
+    margin-left: auto;
+    margin-right: 5%;
+}
