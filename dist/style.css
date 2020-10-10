@@ -2,20 +2,77 @@
     margin: 0;
     padding: 0;
     background-color: aliceblue;
+
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    height: 40vh;
-}
-.container input {
-    width: 80%;
-    height: 40%;
+    /* height: 40vh; */
+    /* margin: 0 2%; */
+    align-items: center;
 }
 
-.container button {
-    width: 30%;
+
+textarea {
+    width: 90vw;
+    height: 180px;
+    border-color: transparent;
+    background-color: grey;
+    font-size: 1.2em;
+    word-wrap: break-word;
+    word-break: break-word;
+    color: white;
+    padding: 10px;
+    resize: none;
+}
+::placeholder {
+    color: lightgrey;
+}
+button {
+    border: transparent;
+
+}
+#shuffled-container {
+    display: flex;
+    padding: 0 10px;
+    height: 220px;
+}
+#convertedOutput {
+    margin-bottom: 2%;
+}
+#copy-btn-div {
+    display: flex;
+    flex-direction: row;
     margin-left: auto;
-    margin-right: 5%;
+}
+#copy-btn-div p {
+    margin: auto 0;
+    padding-right: 5px;
+}
+    #copy-btn{
+    background: blue;
+    padding: 10px;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-size: 1em;
+    
+}
+img {
+    height: 100%;
+    background: blue;
+}
+.convert-btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#convert-btn {
+    background: tomato;
+    height: 40px;
+    width: 40vw;
+    color: white;
+    border-radius: 5%;
 }

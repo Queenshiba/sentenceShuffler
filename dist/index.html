@@ -11,16 +11,22 @@
     <h2>convert a sentence into random order words separated with '/(slash)'. </h2>
 
 <div class="container">
-    <input type="text" placeholder="I want to make a test." name="originalInpput" id="originalInpput">
-    <button type="submit" onclick="sentenceShuffler()">Convert</button>
+    <textarea type="text" placeholder="I want to make a test." name="originalInpput" id="originalInpput">
+    </textarea>
 </div>
 <div class="arrow">
     test
 </div>
-<div class="container">
-    <input type="text" placeholder="( a / make / I / to / want / test / . )" name="ConvertedOutput" id="ConvertedOutput">
-    <button type="submit">Copy</button>
+<div class="container" id="shuffled-container">
+    <textarea type="text" placeholder="( a / make / I / to / want / test / . )" name="convertedOutput" id="convertedOutput"></textarea>
+    <div id="copy-btn-div">
+        <p>Copy Text</p>
+            <button type="submit" id="copy-btn" onclick="copySentence()"><img src="./iconfinder_expand-web5-12_5084632.png" alt="copy text"></button>
+    </div>
+
 </div>
+<div class="convert-btn-container"><button type="submit" id="convert-btn" onclick="convert()">Convert</button></div>
+
 <script src="./main.js"></script>
 </body>
 </html>
