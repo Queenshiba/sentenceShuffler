@@ -14,7 +14,7 @@ For example:
 > ( heard / have / ever / get / ? / what / you / you / is / see / you / what )
 
 
-![](wordShuffler.gif)
+![](https://media.giphy.com/media/awiNJfkjygxuKcjAET/giphy.gif)
 
 
 ## The project's aim
