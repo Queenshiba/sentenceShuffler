@@ -96,14 +96,19 @@ button {
     box-shadow: 10px 10px 17px -4px rgba(0, 0, 0, 0.75);
 }
 
-img {
+#copy-btn-img {
     height: 100%;
-    background: #FFC401;
+    background: transparent;
 }
+
+#copy-btn:hover {
+    background: #ffc401d5;
+}
+
 .btns {
     display: flex;
     flex-direction: column;
-
+align-items: center;
     width: 100%;
 }
 .convert-btn-container, .reset-btn-container {
@@ -111,7 +116,8 @@ img {
     flex-direction: column;
     align-items: center;
     height: 40px;
-    width: 100%;
+    width: 90%;
+    background: transparent;
     margin: 1%;
 }
 
@@ -125,7 +131,9 @@ img {
     border-radius: 2em;
     box-shadow: 10px 10px 17px -4px rgba(0, 0, 0, 0.75);
 }
-
+#convert-btn:hover {
+    background: #ff1e65c9;
+}
 #reset-btn {
     font-size: 1.2em;
     background:  #555555;
@@ -134,4 +142,7 @@ img {
     color: white;
     border-radius: 2em;
     box-shadow: 10px 10px 17px -4px rgba(0, 0, 0, 0.75);
+}
+#reset-btn:hover {
+    background:  #555555c4;
 }

@@ -13,6 +13,10 @@ For example:
 - CONVERTED SENTENCE
 > ( heard / have / ever / get / ? / what / you / you / is / see / you / what )
 
+
+![](wordShuffler.gif)
+
+
 ## The project's aim
 - get comfortable to use multiple functions
 - create an app that first works for one need and add functions later
