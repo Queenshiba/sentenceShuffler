@@ -1,5 +1,5 @@
 {
-  "name": "sentenceShuffler",
+  "name": "sentenceshuffler",
   "version": "1.0.0",
   "description": "- The app that a English sentence into an random ordered words sentence with '/(slashes)' and '( )' in the beginning and end of sentence.\r - This will help teachers / students who practice how to rearrange words into a correct sentence.",
   "main": "index.js",
