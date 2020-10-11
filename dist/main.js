@@ -1,30 +1,30 @@
 
 function convert() {
+  // Set a variable for an original text
   let originalInpput = document.getElementById('originalInpput')
   let originalInputText = originalInpput.value
-  console.log(typeof originalInputText)
+  // console.log(typeof originalInputText)
 
-    let convertedOutput = document.getElementById('convertedOutput')
+  // Set a variable for a converted text
+  let convertedOutput = document.getElementById('convertedOutput')
+  convertedOutput.value = sentenceShuffler(originalInputText)
+  // console.log(convertedOutput.value)
 
-    convertedOutput.value = sentenceShuffler(originalInputText)
-    console.log(convertedOutput.value)
-      
+  // the first function in 'convert' function above
   function sentenceShuffler(str) {
-
-
-    let regex = /(\w+'\w+)|\w+|,|\.|\!/g
-    // console.log(str)
+    // Set regex for those signs ',(comma)', '.(period)', '!'and '?'
+    let regex = /(\w+'\w+)|\w+|,|\.|\?|\!/g
+    // if the iput has the signs above, separated with ""
     let separetedSigns = str.match(regex);
+    // console.log(separetedSigns)
 
+    // put those separated words into 'shuffle' function 
     return shuffle(separetedSigns);
-
-
   }
 
-
-
-
+// the second function in in 'convert' function above
   function shuffle(array) {
+
     let currentIndex = array.length, temporaryValue, randomIndex;
     // While there remain elements to shuffle...
     while (0 !== currentIndex) {
@@ -39,9 +39,12 @@ function convert() {
       array[randomIndex] = temporaryValue;
     }
 
+    // add slashes with every word
     let slashes = array.join(' / ');
-    console.log(slashes)
-    return '( ' + slashes + ' )'
+    // make all words lowercase
+    let lowerSlashes = slashes.toLowerCase()
+    // console.log(typeof slashes)
+    return '( ' + lowerSlashes + ' )'
 
   }
 
@@ -49,11 +52,22 @@ function convert() {
 
 }
 
+// the function that copys the converted sentence (to a clipboard) 
 function copySentence() {
-let convertedOutput = document.getElementById('convertedOutput')
-convertedOutput.select()
-convertedOutput.setSelectionRange(0,99999)
-document.execCommand("copy");
-console.log(convertedOutput.value)
+  let convertedOutput = document.getElementById('convertedOutput')
+  convertedOutput.select()
+  convertedOutput.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  console.log(convertedOutput.value)
+
+}
+
+// the function that reset textarea
+function reset() {
+  let originalInpput = document.getElementById('originalInpput')
+  originalInpput.value = '';
+
+  let convertedOutput = document.getElementById('convertedOutput')
+  convertedOutput.value = '';
 
 }

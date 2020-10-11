@@ -1,32 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Sentence Shuffler</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <title>Word Shuffler</title>
 </head>
-<body>
-    <h1>sentence shuffler</h1>
-    <h2>convert a sentence into random order words separated with '/(slash)'. </h2>
 
-<div class="container">
-    <textarea type="text" placeholder="I want to make a test." name="originalInpput" id="originalInpput">
-    </textarea>
-</div>
-<div class="arrow">
-    test
-</div>
-<div class="container" id="shuffled-container">
-    <textarea type="text" placeholder="( a / make / I / to / want / test / . )" name="convertedOutput" id="convertedOutput"></textarea>
-    <div id="copy-btn-div">
-        <p>Copy Text</p>
-            <button type="submit" id="copy-btn" onclick="copySentence()"><img src="./iconfinder_expand-web5-12_5084632.png" alt="copy text"></button>
+<body>
+
+    <h1>Word Shuffler</h1>
+    <h2>Paste a sentence and get converted!</h2>
+    <!-- <h2>convert a sentence into random order words separated with '/(slash)'. </h2> -->
+
+    <div class="container">
+        <textarea type="text" placeholder="Paste Original here&#10; &#10;I want to make a test." name="originalInpput"
+            id="originalInpput"></textarea>
+    </div>
+    <div class="arrow">
+        <img src="./iconfinder_sync_1372386.png" alt="convert icon">
+    </div>
+    <div class="container" id="shuffled-container">
+        <textarea type="text" placeholder="Get Result&#10;&#10; ( a / make / I / to / want / test / . )"
+            name="convertedOutput" id="convertedOutput"></textarea>
+        <div id="copy-btn-div">
+            <p>Copy Converted Text</p>
+            <button type="submit" id="copy-btn" onclick="copySentence()"><img
+                    src="./iconfinder_expand-web5-12_5084632.png" alt="copy text"></button>
+        </div>
+
+    </div>
+    <div class="btns">
+        <div class="convert-btn-container">
+            <button type="submit" id="convert-btn" onclick="convert()">Convert</button>
+        </div>
+        <div class="reset-btn-container">
+            <button type="submit" id="reset-btn" onclick="reset()">Reset</button>
+        </div>
     </div>
 
-</div>
-<div class="convert-btn-container"><button type="submit" id="convert-btn" onclick="convert()">Convert</button></div>
 
-<script src="./main.js"></script>
+    <script src="./main.js"></script>
 </body>
+
 </html>

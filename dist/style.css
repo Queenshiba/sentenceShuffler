@@ -1,8 +1,34 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: aliceblue;
+    background-color: #333333;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
 
+h1, h2 {
+    font-size: 2.5em;
+    color: white;
+    text-align: center;
+    padding: 10px 0 0 0;
+}
+
+h2 {
+    font-size: 1.2em;
+    padding-bottom: 10px;
+}
+
+.arrow {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    
+}
+
+.arrow img {
+    height: 40px;
+    background: transparent;
+    margin: 0 auto;
 }
 
 .container {
@@ -13,66 +39,99 @@
     align-items: center;
 }
 
-
 textarea {
     width: 90vw;
-    height: 180px;
+    height: 170px;
     border-color: transparent;
-    background-color: grey;
+    background-color: #555555;
     font-size: 1.2em;
     word-wrap: break-word;
     word-break: break-word;
     color: white;
     padding: 10px;
     resize: none;
+    border-radius: 1em;
+    box-shadow: 10px 10px 17px -4px rgba(0, 0, 0, 0.75);
 }
+
 ::placeholder {
     color: lightgrey;
 }
+
 button {
     border: transparent;
-
 }
+
 #shuffled-container {
     display: flex;
     padding: 0 10px;
-    height: 220px;
 }
+
 #convertedOutput {
     margin-bottom: 2%;
 }
+
 #copy-btn-div {
     display: flex;
     flex-direction: row;
     margin-left: auto;
+    background-color: transparent;
 }
+
 #copy-btn-div p {
     margin: auto 0;
     padding-right: 5px;
+    color: white;
+   
 }
-    #copy-btn{
-    background: blue;
+
+#copy-btn {
+    background: #FFC401;
     padding: 10px;
     text-align: center;
     height: 50px;
     width: 50px;
-    border-radius: 50%;
     font-size: 1em;
-    
+    border-radius: 2em;
+    box-shadow: 10px 10px 17px -4px rgba(0, 0, 0, 0.75);
 }
+
 img {
     height: 100%;
-    background: blue;
+    background: #FFC401;
 }
-.convert-btn-container {
+.btns {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+.convert-btn-container, .reset-btn-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 40px;
+    width: 100%;
+    margin: 1%;
 }
+
 #convert-btn {
-    background: tomato;
+    font-size: 1.2em;
+    background: #FF1E65;
+    height: 40px;
+    width: 40vw;
+    padding: 10px;
+    color: white;
+    border-radius: 2em;
+    box-shadow: 10px 10px 17px -4px rgba(0, 0, 0, 0.75);
+}
+
+#reset-btn {
+    font-size: 1.2em;
+    background:  #555555;
     height: 40px;
     width: 40vw;
     color: white;
-    border-radius: 5%;
+    border-radius: 2em;
+    box-shadow: 10px 10px 17px -4px rgba(0, 0, 0, 0.75);
 }
